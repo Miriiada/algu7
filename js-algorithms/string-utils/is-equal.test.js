@@ -17,7 +17,7 @@ test('should return false for string of different length', () => {
     expect(isEqual('hi', 'hello')).toEqual(false);
 });
 
-test('should return false for string of different length', () => {
+test('should return false if spaces are present', () => {
     expect(isEqual(' a', 'a')).toEqual(false);
 });
 
