@@ -1,3 +1,0 @@
-function isEqual(a, b) {
-
-}
