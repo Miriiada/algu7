@@ -10,7 +10,7 @@ export function isMore(a, b) {
     }
 
     for (let i = 0; i < len(a) && i < len(b); i++) {
-        if (a[i].charCodeAt(0) !== b[i].charCodeAt(0) ) {
+        if (a[i].charCodeAt(0) !== b[i].charCodeAt(0)) {
             return a[i].charCodeAt(0) > b[i].charCodeAt(0);
         }
     }
