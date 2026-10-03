@@ -1,5 +1,5 @@
 import { test, expect } from 'bun:test';
-import { isMoreOrEqual } from './is-more-or-equal';
+import { isMoreOrEqual } from './is-more-or-equal.js';
 
 test('should return true if a is greater', () => {
     expect(isMoreOrEqual('cat', 'car')).toEqual(true);
