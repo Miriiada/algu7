@@ -5,7 +5,7 @@ test('should return true if a is strictly greater the difference is at the third
     expect(isMore('cat', 'car')).toEqual(true);
 });
 
-test('should return false if a is cleary smaller', () => {
+test('should return false if a is clearly smaller', () => {
     expect(isMore('car', 'cat')).toEqual(false);
 });
 
