@@ -22,7 +22,7 @@ test('should return false if a is shorter and the characters match', () => {
 });
 
 test('should return true for empty strings', () => {
-    expect(isMoreOrEqual('','')).toEqual(true);
+    expect(isMoreOrEqual('', '')).toEqual(true);
 });
 
 test('should throw a TypeError if the first argument is not a string', () => {
