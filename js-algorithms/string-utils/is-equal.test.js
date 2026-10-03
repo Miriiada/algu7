@@ -1,7 +1,7 @@
 import { test, expect } from 'bun:test';
 import { isEqual } from './is-equal.js';
 
-test('should return true for equal string', () =>{
+test('should return true for equal string', () => {
     expect(isEqual('hello', 'hello')).toEqual(true);
 });
 

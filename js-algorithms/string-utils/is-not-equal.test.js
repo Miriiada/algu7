@@ -1,5 +1,5 @@
 import { test, expect } from 'bun:test';
-import {isNotEqual} from "./is-not-equal.js";
+import {isNotEqual} from './is-not-equal.js';
 
 test('should return true for different strings', () => {
     expect(isNotEqual('hello', 'world')).toEqual(true);
