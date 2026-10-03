@@ -1,34 +1,34 @@
 import { test, expect } from 'bun:test';
-import { isMoreOrEqual } from './is-more-or-equal.js';
+import { isMoreOfEqual } from './is-more-of-equal.js';
 
 test('should return true if a is greater', () => {
-    expect(isMoreOrEqual('cat', 'car')).toEqual(true);
+    expect(isMoreOfEqual('cat', 'car')).toEqual(true);
 });
 
 test('should return true if the strings are equal', () => {
-    expect(isMoreOrEqual('hello', 'hello')).toEqual(true);
+    expect(isMoreOfEqual('hello', 'hello')).toEqual(true);
 });
 
 test('should return false if a is less', () => {
-    expect(isMoreOrEqual('car', 'cat')).toEqual(false);
+    expect(isMoreOfEqual('car', 'cat')).toEqual(false);
 });
 
 test('should return true if a is longer and the characters match', () => {
-    expect(isMoreOrEqual('hello!', 'hello')).toEqual(true);
+    expect(isMoreOfEqual('hello!', 'hello')).toEqual(true);
 });
 
 test('should return false if a is shorter and the characters match', () => {
-    expect(isMoreOrEqual('hello', 'hello!')).toEqual(false);
+    expect(isMoreOfEqual('hello', 'hello!')).toEqual(false);
 });
 
 test('should return true for empty strings', () => {
-    expect(isMoreOrEqual('', '')).toEqual(true);
+    expect(isMoreOfEqual('', '')).toEqual(true);
 });
 
 test('should throw a TypeError if the first argument is not a string', () => {
-    expect(() => isMoreOrEqual(123, 'hello')).toThrow(TypeError);
+    expect(() => isMoreOfEqual(123, 'hello')).toThrow(TypeError);
 });
 
 test('should throw a TypeError if the second argument is not a string', () => {
-    expect(() => isMoreOrEqual('hello', null)).toThrow(TypeError);
+    expect(() => isMoreOfEqual('hello', null)).toThrow(TypeError);
 });
