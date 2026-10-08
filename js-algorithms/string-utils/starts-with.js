@@ -1,3 +1,18 @@
+/**
+ * Checks whether a string starts with a given substring.
+ * The comparison is case-sensitive.
+ *
+ * @param {string} str - The original string.
+ * @param {string} search - The prefix to check.
+ * @returns {boolean} True if the string starts with the prefix, otherwise false.
+ * @throws {TypeError} if either argument is not a string.
+ *
+ * @example
+ *  startsWith('hello', 'he'); // true
+ *  startsWith('hello', 'el'); // false
+ *  startsWith('hello', ''); // true
+ */
+
 import { len } from './len.js';
 
 export function startsWith (str, search) {
