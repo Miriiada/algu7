@@ -7,15 +7,15 @@ import { indexOf } from './index-of.js';
  * Replacement text is not searched again.
  * An empty search inserts replacement between and around characters.
  *
- * @param {string}  str -The original string.
+ * @param {string} str - The original string.
  * @param {string}  search - The substring to find.
  * @param {string}  replacement - The replacement string.
  * @returns {string} A new string with all occurrences replaced.
- * @throws {TypeError}  if any argument is not a string.
+ * @throws {TypeError} If any argument is not a string.
  *
  * @example
  *  replaceAll('banana', 'na', 'NA'); // 'baNANA'
- *  replaceALL('aaa', 'aa', 'ba'); // 'baa'
+ *  replaceAll('aaa', 'aa', 'ba'); // 'baa'
  *  replaceAll('abc', '', 'X'); // 'XaXbXcX'
  */
 
