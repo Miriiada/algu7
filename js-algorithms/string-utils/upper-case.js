@@ -5,9 +5,25 @@ import { len } from './len.js';
  *
  * @param {string} str - The original string.
  * @returns {string} The converted string.
- * @throw {TypeError} If str is not a string.
+ * @throws {TypeError} If str is not a string.
  */
 
 export function upperCase(str) {
-    return str;
+    if (typeof str !== 'string') {
+        throw new TypeError('Argument must be a string');
+    }
+
+    let result = '';
+
+    for (let i = 0; i < len(str); i++) {
+        const code = str[i].charCodeAt(0);
+
+        if ((code >= 97 && code <= 122) || (code >= 1072 && code <= 1103)) {
+            result += String.fromCodePoint(code - 32);
+        } else {
+            result += str[i];
+        }
+    }
+
+    return result;
 }
