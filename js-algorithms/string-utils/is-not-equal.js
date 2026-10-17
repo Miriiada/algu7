@@ -1,3 +1,17 @@
+/**
+ * Checks weather two strings are different
+ * The comparison is case-sensitive
+ *
+ * @param {string} a - The first string.
+ * @param {string} b - The second string.
+ * @returns {boolean} True if the strings are different, otherwise false.
+ * @throws {TypeError} if either argument is not a string.
+ *
+ * @example
+ *  isNotEqual('hello', 'world'); // true
+ *  isNotEqual('hello', 'hello'); // false
+ */
+
 import { len } from './len.js'
 
 export function isNotEqual(a, b) {

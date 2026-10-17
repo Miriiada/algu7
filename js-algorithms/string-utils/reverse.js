@@ -1,3 +1,16 @@
+/**
+ * Returns a string with its characters in reverse order.
+ *
+ * @param {string} str - The string to reverse.
+ * @return {string} A new string with the characters reversed.
+ * @throws {TypeError} If the argument is not a string.
+ *
+ * @example
+ * reverse('hello'); // 'olleh'
+ * reverse('racecar') // 'racecar'
+ * reverse(''); // ''
+ */
+
 import { len } from './len.js';
 
 export function reverse(str) {

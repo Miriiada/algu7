@@ -1,3 +1,17 @@
+/**
+ * Checks whether the first string is lexicographically greater than the second.
+ * The comparison is care-sensitive.
+ *
+ * @param {string} a - The first string.
+ * @param {string} b - The second string.
+ * @returns {boolean} True if the first string is greater, otherwise false.
+ * @throws {TypeError} if either argument is not a string.
+ *
+ * @example
+ *  isMore('cat', 'car'); // true
+ *  isMore('car', 'cat'); // false
+ */
+
 import { len } from './len.js'
 
 export function isMore(a, b) {

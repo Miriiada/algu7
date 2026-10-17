@@ -1,3 +1,21 @@
+/**
+ * Repeats a string a specified number of times.
+ * Fractional counts are rounded down.
+ * Returns an empty string if the count is zero or omitted.
+ *
+ * @param {string} str - The string to repeat.
+ * @param {number} [count] - The number of repetitions.
+ * @returns {string} A new string containing the repeated text.
+ * @throws {TypeError} If str not a string or count is a number.
+ * @throws {RangeError} If count is negative.
+ *
+ * @example
+ * repeat('ab', 3); // 'ababab'
+ * repeat('a', 2.7); // 'aa'
+ * repeat('a', 0); // ''
+ * repeat('a'); // ''
+ */
+
 export function repeat(str, count) {
 
     if (typeof str !== 'string') {
