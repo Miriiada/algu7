@@ -14,7 +14,7 @@ export function len(arr) {
 
     let count = 0;
 
-    for (const element of arr) {
+    for (let i = 0; arr[i] !== undefined; i++) {
         count++;
     }
 
