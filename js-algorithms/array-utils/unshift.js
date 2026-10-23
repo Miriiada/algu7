@@ -1,13 +1,13 @@
 import { len } from './len.js';
 
 /**
- * Adds at item to the beginning of an array.
- * Shift all existing elements one position to the right.
+ * Adds an item to the beginning of an array.
+ * Shifts all existing elements one position to the right.
  * Mutates the original array.
  *
- * @param {Array} arr - The input array.
- * @param {item} item - The item add to the beginning.
- * @returns {number} - The new item in array.
+ * @param {Array} arr - The array to modify.
+ * @param {*} item - The item to add.
+ * @returns {number} - The new length of the array.
  * @throws {TypeError} - If arr is not an array.
  */
 
