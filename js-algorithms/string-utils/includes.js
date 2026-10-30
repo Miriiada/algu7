@@ -1,3 +1,5 @@
+import { indexOf } from './index-of.js';
+
 /**
  * Checks whether a string contains a given substring.
  * The search is case-sensitive.
@@ -11,8 +13,6 @@
  *  includes('hello', 'xyz'); // false
  *  includes('hello', ''); // true
  */
-
-import { indexOf } from './index-of.js';
 
 export function includes(str, search) {
     return indexOf(str, search) !== -1;
